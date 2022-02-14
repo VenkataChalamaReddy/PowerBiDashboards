@@ -53,6 +53,7 @@ public class FlowOfImplantConsumption extends Utilities {
 		clickOnTabItemsWithActions(
 				"(//transform[@class='selectThrough'])[3]/descendant::div[contains(@class,'ui-role-button-text')]",
 				"HOSPITAL");
+		System.out.println("Hospital");
 		Thread.sleep(2000);
 		driver.switchTo().frame(driver.findElement(By.xpath("(//iframe)[1]")));
 		Actions actn = new Actions(driver);
@@ -62,6 +63,7 @@ public class FlowOfImplantConsumption extends Utilities {
 		for (WebElement item : metricsList) {
 			System.out.println(item.getText());
 			i++;
+			
 
 //		 List<String> all_elements_text=new ArrayList<>();
 //		 for(int i=0; i<metricsList.size(); i++){
